@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: multiline script
         run: |
-           java -v
-           javac
-           install pip
+           java -version
            node -v
-           install npm
+           
