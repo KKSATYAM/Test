@@ -1,19 +1,15 @@
-name: Shell Commands
+name: shell Command
 
-on: [push]
+on: push
 
 jobs:
-    run-shell-commands:
-      runs-on: ubuntu-latest
-      steps:
-        - name: echo a string
-          run: echo "Hello GITHUB"
-        - name: multiline scripts
-          run: |
+  run-shell-commands:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: multiline script
+        run: |
+           java -v
+           javac
+           install pip
            node -v
-           npm -v
-
-        
-        
-
-  
+           install npm
