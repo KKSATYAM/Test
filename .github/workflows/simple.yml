@@ -8,6 +8,12 @@ jobs:
       steps:
         - name: echo a string
           run: echo "Hello GITHUB"
+        -name: multiline scripts
+         run: |
+           node -v
+           npm -v
+           
+        
         
 
   
